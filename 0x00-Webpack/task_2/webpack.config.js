@@ -1,4 +1,6 @@
 const path = require("path");
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+
 
 module.exports = {
   entry: "./js/dashboard_main.js",
@@ -16,6 +18,9 @@ module.exports = {
     ]
   },
   mode: "production",
+  plugins: [
+    new HtmlWebpackPlugin()
+  ],
   performance: {
     maxAssetSize: 1000000,
     maxEntrypointSize: 1000000,
