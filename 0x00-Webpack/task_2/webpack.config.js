@@ -30,5 +30,9 @@ module.exports = {
       })
     ]
   },
-  mode: "production"
+  mode: "production",
+  performance: {
+    maxAssetSize: 244000,
+    hints: false
+  }
 }
