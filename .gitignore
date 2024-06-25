@@ -5,3 +5,4 @@ main.js.*
 bundle.js
 bundle.js.*
 *.jpg
+.DS_Store
