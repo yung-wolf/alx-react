@@ -2,7 +2,8 @@
   --primary-color-red: rgb(229, 8, 8);
   --primary-color-black: rgb(0, 0, 0);
 
-  --font-family: 'Roboto', sans-serif;
+  --font-family-primary: 'Roboto', sans-serif;
+  --font-family-secondary: "Times New Roman", Times, serif;
   --font-size: 1.2em;
 
   box-sizing: border-box;
@@ -10,7 +11,7 @@
 
 body {
   margin: 0;
-  font-family: var(--font-family);
+  font-family: var(--font-family-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

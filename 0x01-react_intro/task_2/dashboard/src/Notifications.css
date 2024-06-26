@@ -1,4 +1,16 @@
 .Notifications {
-  border: 1px solid black;
-  padding: 40px;
+  border: 2px dashed rgb(229, 8, 8);
+  padding: 10px 40px;
+  margin: 20px;
+  position: relative;
+  font-size: var(--font-size);
+  font-family: var(--font-family-secondary);
+}
+
+[data-priority="default"] {
+  color: rgba(2, 2, 125, 0.967);
+}
+
+[data-priority="urgent"] {
+  color: red;
 }
