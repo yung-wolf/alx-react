@@ -22,9 +22,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# custom
-/public
-package.json
-
 # Add jpg files in /src
 !/src/**/*.jpg
