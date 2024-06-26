@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/alx-react/0x01-react_intro/task_4/dashboard/static/css/main.76b423ac.css",
-    "main.js": "/alx-react/0x01-react_intro/task_4/dashboard/static/js/main.c7a94b9a.js",
-    "static/js/453.59b8a61b.chunk.js": "/alx-react/0x01-react_intro/task_4/dashboard/static/js/453.59b8a61b.chunk.js",
-    "static/media/logo.jpg": "/alx-react/0x01-react_intro/task_4/dashboard/static/media/logo.24bab5d633e36ca8d17e.jpg",
-    "index.html": "/alx-react/0x01-react_intro/task_4/dashboard/index.html",
-    "main.76b423ac.css.map": "/alx-react/0x01-react_intro/task_4/dashboard/static/css/main.76b423ac.css.map",
-    "main.c7a94b9a.js.map": "/alx-react/0x01-react_intro/task_4/dashboard/static/js/main.c7a94b9a.js.map",
-    "453.59b8a61b.chunk.js.map": "/alx-react/0x01-react_intro/task_4/dashboard/static/js/453.59b8a61b.chunk.js.map"
+    "main.css": "/alx-react/static/css/main.985b1691.css",
+    "main.js": "/alx-react/static/js/main.203e2aef.js",
+    "static/js/453.59b8a61b.chunk.js": "/alx-react/static/js/453.59b8a61b.chunk.js",
+    "static/media/logo.jpg": "/alx-react/static/media/logo.24bab5d633e36ca8d17e.jpg",
+    "index.html": "/alx-react/index.html",
+    "main.985b1691.css.map": "/alx-react/static/css/main.985b1691.css.map",
+    "main.203e2aef.js.map": "/alx-react/static/js/main.203e2aef.js.map",
+    "453.59b8a61b.chunk.js.map": "/alx-react/static/js/453.59b8a61b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.76b423ac.css",
-    "static/js/main.c7a94b9a.js"
+    "static/css/main.985b1691.css",
+    "static/js/main.203e2aef.js"
   ]
 }
