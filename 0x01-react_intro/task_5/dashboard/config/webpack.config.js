@@ -13,7 +13,7 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(jpg|png)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
         use: [
           'file-loader',
           {
@@ -41,5 +41,10 @@ module.exports = {
     static: path.resolve('./dist'),
     compress: true,
     port: 3000,
+  },
+  performance: {
+    maxAssetSize: 100000,
+    maxEntrypointSize: 100000,
+    hints: false
   },
 };
