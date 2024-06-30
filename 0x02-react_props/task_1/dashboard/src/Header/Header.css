@@ -1,0 +1,14 @@
+.App-header {
+  height: 30vh;
+  width: 100%;
+  padding-left: 10px;
+  display: flex;
+  color: var(--primary-color-red);
+  align-items: center;
+  justify-content: left;
+}
+
+.App-logo2 {
+  max-height: 25vh;
+  min-width: 25vw;
+}
