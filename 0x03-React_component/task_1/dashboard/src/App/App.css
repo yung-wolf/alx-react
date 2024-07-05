@@ -1,0 +1,64 @@
+:root {
+  --primary-color-red: rgb(229, 8, 8);
+  --primary-color-black: rgb(0, 0, 0);
+
+  --font-family-primary: 'Roboto', sans-serif;
+  --font-family-secondary: "Times New Roman", Times, serif;
+  --font-size: 1.2em;
+
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  padding: 0 30px;
+  text-align: left;
+  font-size: var(--font-size);
+}
+
+.App-header {
+  height: 30vh;
+  width: 100%;
+  padding-left: 10px;
+  display: flex;
+  color: var(--primary-color-red);
+  align-items: center;
+  justify-content: left;
+}
+
+.App-logo {
+  min-height: 30vh;
+  min-width: 25vw;
+  background-image: url('../assets/holberton-logo-PNG.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+hr {
+  border: 2px solid var(--primary-color-red);
+}
+
+.App-body {
+  color: var(--primary-color-black);
+  padding: 40px 60px;
+}
+
+.App-body input {
+  margin: 10px;
+}
+
+.App-footer {
+  position: fixed;
+  bottom: 0;
+  height: 10vh;
+  width: 96.1%;
+  text-align: center;
+  font-style: italic;
+}
