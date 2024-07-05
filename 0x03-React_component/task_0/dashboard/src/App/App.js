@@ -9,7 +9,7 @@ import CourseList from '../CourseList/CourseList';
 import { getLatestNotification } from '../utils/utils';
 // import MyLogo from '../assets/Holberton-logo.jpg';
 
-// create a new array named listCourses. It should contains three elements:
+// create a new array named listCourses. It should contains three elements
 const listCourses = [
   { id: 1, name: 'ES6', credit: 60 },
   { id: 2, name: 'Webpack', credit: 20 },
