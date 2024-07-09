@@ -26,12 +26,12 @@ class Notifications extends Component {
 
     return (
       <>
-        {listNotifications.length == 0 ? <strong className="menuItem" id="first-not-menu">No new notification for now</strong> :
-          <div className="notification-container">
-            <div className="menuItem">Your notifications</div>
+        {listNotifications.length == 0 ? <strong className={css(styles.menuItem)} id="first-not-menu">No new notification for now</strong> :
+          <div className={css(styles.notificationContainer)}>
+            <div className={css(styles.menuItem)}>Your notifications</div>
     
             {displayDrawer && (
-              <div className="Notifications">
+              <div className={css(styles.Notifications)}>
                 <button
                   aria-label='Close'
                   style={{
@@ -70,5 +70,39 @@ Notifications.defaultProps = {
   displayDrawer: false,
   listNotifications: []
 }
+
+// rules for in-line styling
+const priColors = {
+  red: 'rgb(229, 8, 8)',
+}
+
+const styles = StyleSheet.create({
+  notificationContainer: {
+    position: 'relative',
+  },
+  menuItem: {
+    fontFamily: ["Times New Roman", 'Times', 'serif'],
+    fontSize: '1.2em',
+    marginTop: 8,
+    marginRight: 30,
+    marginLeft: 30,
+    marginBottom: 0,
+    textAlign: 'right',
+  },
+  Notifications: {
+    width: 450,
+    border: `2px, dashed, ${priColors.red}`,
+    paddingTop: 10,
+    paddingBottom: 10,
+    paddingLeft: 40,
+    paddingRight: 40,
+    margin: 20,
+    position: 'absolute',
+    right: 0,
+    top: 30,
+    fontSize: '1.2em',
+    fontFamily: ['Times New Roman', 'Times', 'serif'],
+  }
+})
 
 export default Notifications;
