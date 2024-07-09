@@ -1,6 +1,9 @@
 import React from 'react';
 import Header from './Header';
 import { shallow } from 'enzyme';
+//  using StyleSheetTestUtils.suppressStyleInjection at the top of your test file, to prevent issues with style injections
+import { StyleSheetTestUtils } from 'aphrodite';
+StyleSheetTestUtils.suppressStyleInjection();
 
 // Renders the Header without crashing
 it('renders without crashing', () => {

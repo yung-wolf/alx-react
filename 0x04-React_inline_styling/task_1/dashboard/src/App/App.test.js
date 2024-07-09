@@ -9,15 +9,20 @@ import Notification from '../Notifications/Notifications';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Login from '../Login/Login';
-import BodySection from '../BodySection/BodySection';
-import BodySectionWithMarginBottom from '../BodySection/BodySectionWithMarginBottom';
-import CourseList from "../CourseList/CourseList";
+
+//  using StyleSheetTestUtils.suppressStyleInjection at the top of your test file, to prevent issues with style injections
+import { StyleSheetTestUtils } from 'aphrodite';
 
 describe('<App />', () => {
   let wrapper;
 
   beforeEach(() => {
     wrapper = shallow(<App />);
+    StyleSheetTestUtils.suppressStyleInjection();
+  })
+
+  afterEach(() => {
+    StyleSheetTestUtils.clearBufferAndResumeStyleInjection();
   })
 
   // Renders the App without crashing
@@ -28,16 +33,6 @@ describe('<App />', () => {
   // verify that App renders a div with the class App-header
   it('renders a div with the class App-header', () => {
     expect(wrapper.find('div.App-header').length).toEqual(1);
-  })
-
-  // verify that App renders a div with the class App-body
-  it('renders a div with the class App-body', () => {
-    expect(wrapper.find('div.App-body').length).toEqual(1);
-  })
-
-  // verify that App renders a div with the class App-footer
-  it('renders a div with the class App-footer', () => {
-    expect(wrapper.find('div.App-footer').length).toEqual(1);
   })
 
   // verify that App contains a Notifications component

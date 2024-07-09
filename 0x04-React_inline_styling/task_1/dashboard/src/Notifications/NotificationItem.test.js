@@ -1,6 +1,9 @@
 import React from 'react';
 import NotificationItem from "./NotificationItem";
 import { shallow } from 'enzyme';
+//  using StyleSheetTestUtils.suppressStyleInjection at the top of your test file, to prevent issues with style injections
+import { StyleSheetTestUtils } from 'aphrodite';
+StyleSheetTestUtils.suppressStyleInjection();
 
 // Verify that the basic rendering of the component works without crashing
 it('renders without crashing', () => {

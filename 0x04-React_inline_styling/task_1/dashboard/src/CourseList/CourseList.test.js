@@ -1,6 +1,9 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import CourseList from './CourseList';
+//  using StyleSheetTestUtils.suppressStyleInjection at the top of your test file, to prevent issues with style injections
+import { StyleSheetTestUtils } from 'aphrodite';
+StyleSheetTestUtils.suppressStyleInjection();
 
 // create a new array named listCourses. It should contains three elements:
 const listCourses = [
