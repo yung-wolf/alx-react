@@ -26,7 +26,7 @@ class Notifications extends Component {
 
     return (
       <>
-        {listNotifications.length == 0 ? <strong className={css(styles.menuItem)} id="first-not-menu">No new notification for now</strong> :
+        {listNotifications.length == 0 ? <strong className={css(styles.menuItem)} id={css(styles.firstNotMenu)}>No new notification for now</strong> :
           <div className={css(styles.notificationContainer)}>
             <div className={css(styles.menuItem)}>Your notifications</div>
     
@@ -102,6 +102,11 @@ const styles = StyleSheet.create({
     top: 30,
     fontSize: '1.2em',
     fontFamily: ['Times New Roman', 'Times', 'serif'],
+  },
+  firstNotMenu: {
+    display: 'inline-block',
+    width: '96%',
+    color: 'rgb(229, 8, 8)',
   }
 })
 

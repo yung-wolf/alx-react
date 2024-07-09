@@ -1,13 +1,3 @@
-#first-not-menu {
-  display: inline-block;
-  width: 96%;
-  color: rgb(229, 8, 8);
-}
-
-button img:hover {
-  opacity: 0.5;
-}
-
 [data-priority="default"],
 [data-notification-type="default"] {
   color: rgba(2, 2, 125, 0.967);
