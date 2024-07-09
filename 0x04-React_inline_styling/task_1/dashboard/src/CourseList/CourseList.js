@@ -9,7 +9,7 @@ import './CourseList.css'
 
 const CourseList = ({ listCourses }) => {
   return (
-    <table id="CourseList">
+    <table id="CourseList" className={css(styles.table)}>
       <thead>
         {listCourses.length == 0 ?
           <CourseListRow textFirstCell="No course available yet" isHeader={true} /> :
@@ -31,7 +31,11 @@ const CourseList = ({ listCourses }) => {
 
 // hold rules for in-line styling
 const styles = StyleSheet.create({
-  
+  table: {
+    width: "100%",
+    border: "1px solid #ccc",
+    margin: "20px 0",
+  },
 })
 
 // Define proptypes

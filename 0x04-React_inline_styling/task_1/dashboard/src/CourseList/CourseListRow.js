@@ -4,6 +4,7 @@
 // textSecondCell (string / number, default: null)
 
 import React from 'react';
+import { StyleSheet, css } from 'aphrodite';
 
 const rowColor = { backgroundColor: '#f5f5f5ab' };
 const headerRowColor = { backgroundColor: '#deb5b545' };
@@ -13,7 +14,7 @@ function CourseListRow({ isHeader=false, textFirstCell, textSecondCell=null }) {
     <tr style={isHeader ? headerRowColor : rowColor}>
       {isHeader ? (
         textSecondCell == null ?
-        <th id="title" colSpan="2">{textFirstCell}</th> :
+        <th className={css(styles.tableTitle)} colSpan="2">{textFirstCell}</th> :
         <>
           <th>{textFirstCell}</th>
           <th>{textSecondCell}</th>
@@ -27,5 +28,11 @@ function CourseListRow({ isHeader=false, textFirstCell, textSecondCell=null }) {
     </tr>
   )
 }
+
+const styles = StyleSheet.create({
+  tableTitle: {
+    textAlign: 'center',
+  }
+})
 
 export default CourseListRow
