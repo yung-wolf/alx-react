@@ -9,6 +9,8 @@ const map = fromJS({
   6: 'Lucas',
 }); 
 
-const map2 = map.set(2, 'Benjamin').set(4, 'Oliver');
+const map2 = map.withMutations(mapItem => {
+  mapItem.set(2, 'Benjamin').set(4, 'Oliver');
+});
 
 module.exports = { map, map2 };
