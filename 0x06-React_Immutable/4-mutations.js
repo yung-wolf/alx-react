@@ -1,6 +1,6 @@
-import { Map } from 'immutable';
+import { fromJS } from 'immutable';
 
-const map = Map({
+const map = fromJS({
   1: 'Liam',
   2: 'Noah',
   3: 'Elijah',
