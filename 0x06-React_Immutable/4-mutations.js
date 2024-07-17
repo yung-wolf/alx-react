@@ -1,6 +1,6 @@
 import { fromJS } from 'immutable';
 
-const map = fromJS({
+export const map = fromJS({
   1: 'Liam',
   2: 'Noah',
   3: 'Elijah',
@@ -9,8 +9,6 @@ const map = fromJS({
   6: 'Lucas',
 }); 
 
-const map2 = map.withMutations(mapItem => {
+export const map2 = map.withMutations(mapItem => {
   mapItem.set(2, 'Benjamin').set(4, 'Oliver');
 });
-
-module.exports = { map, map2 };
