@@ -1,4 +1,4 @@
-const { Seq } = require('immutable');
+import { Seq } from 'immutable';
 
 export default function printBestStudents(grades) {
   // Convert the input object to a Seq
