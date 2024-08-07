@@ -5,13 +5,25 @@ import Footer from './Footer';
 import { StyleSheetTestUtils } from 'aphrodite';
 StyleSheetTestUtils.suppressStyleInjection();
 
-// Renders the Footer without crashing
-it('renders Footer without crashing', () => {
-  shallow(<Footer />);
-})
+describe('<Footer />', () => {
+  it('renders without crashing', () => {
+    const wrapper = shallow(<Footer />);
+    expect(wrapper.exists()).toBe(true);
+  });
 
-// Verify that the components at the very least render the text “Copyright”
-it('atleast renders the text Copyright', () => {
-  const wrapper = shallow(<Footer />);
-  expect(wrapper.text()).toContain('Copyright');
-})
+  it('renders the text "Copyright"', () => {
+    const wrapper = shallow(<Footer />);
+    expect(wrapper.text()).toContain('Copyright');
+  });
+
+  it('does not display the link when user is logged out', () => {
+    const wrapper = shallow(<Footer user={null} />);
+    expect(wrapper.find('a').exists()).toBe(false);
+  });
+
+  it('displays the link when user is logged in', () => {
+    const user = { isLoggedIn: true };
+    const wrapper = shallow(<Footer user={user} />);
+    expect(wrapper.find('a').exists()).toBe(true);
+  });
+});
